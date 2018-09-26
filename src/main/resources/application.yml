@@ -31,8 +31,8 @@ spring:
         uri: lb://authenticator
         predicates:
         - Path=/auth/**
-        filters:
-        - RewritePath=/bebe/(?<path>.*), /$\{path}
+        #filters:
+        #- RewritePath=/bebe/(?<path>.*), /$\{path}
       - id: department-service
         uri: lb://department-service
         predicates:
