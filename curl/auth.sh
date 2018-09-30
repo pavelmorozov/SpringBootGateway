@@ -14,13 +14,13 @@ EOF
 echo $(generate_post_data)
 
 echo "======================"
-echo "http://localhost:8060/auth"
+echo "http://localhost:8762/auth"
 echo "======================"
 
 # -v verbose
 curl -v -H 'Access-Control-Request-Method: POST' \
     -H "Content-Type: application/json" \
-    "http://localhost:8060/auth/" \
+    "http://localhost:8762/auth/" \
     -d "$(generate_post_data)"
 
 echo
