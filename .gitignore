@@ -1,3 +1,4 @@
+/doc/
 *mvn*
 /target/
 !.mvn/wrapper/maven-wrapper.jar
